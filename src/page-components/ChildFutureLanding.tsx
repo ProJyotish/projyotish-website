@@ -274,7 +274,7 @@ const ChildFutureLanding = () => {
               <WhatsAppButton />
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.45 }} className="flex flex-wrap justify-center gap-4 text-muted-foreground font-body text-sm">
-              <div className="flex items-center gap-1.5"><Star className="w-4 h-4 text-saffron" /><span>1000s of parents helped</span></div>
+              <div className="flex items-center gap-1.5"><Star className="w-4 h-4 text-saffron" /><span>Lineage of Shri Achyutananda Das</span></div>
               <span className="text-border hidden sm:inline">•</span><span>Vedic Astrology</span>
               <span className="text-border hidden sm:inline">•</span><span>Built by IIT graduates</span>
             </motion.div>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import logo from "@/src/assets/file.svg";
+import logo from "@/src/assets/projyotish-logo-new.jpeg";
 import { trackCustomEvent } from "@/src/lib/tracking";
 import { useSourceGreeting } from "@/src/contexts/SourceGreetingContext";
 

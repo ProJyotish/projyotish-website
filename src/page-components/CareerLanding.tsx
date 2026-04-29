@@ -304,7 +304,7 @@ const CareerLanding = () => {
             >
               <div className="flex items-center gap-1.5">
                 <Star className="w-4 h-4 text-saffron" />
-                <span>1000s of questions answered</span>
+                <span>Lineage of Shri Achyutananda Das</span>
               </div>
               <span className="text-border hidden sm:inline">•</span>
               <span>Vedic Astrology</span>
