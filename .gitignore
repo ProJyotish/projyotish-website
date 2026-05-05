@@ -26,4 +26,4 @@ out
 *.njsproj
 *.sln
 *.sw?
-.env*
+config.bat
