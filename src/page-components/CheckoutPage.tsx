@@ -192,7 +192,8 @@ const CheckoutPage = () => {
       prefill: normalizedUserId ? { contact: normalizedUserId } : undefined,
       theme: { color: "#7C3AED" },
       handler: () => {
-        trackCustomEvent("Purchase", {
+        /* trackCustomEvent("Purchase", {
+          event_id: subscriptionId,
           price: price,
           content_name: `Checkout ${plan.name} ${billingTermLabel}`,
           value: price,
@@ -206,12 +207,13 @@ const CheckoutPage = () => {
           plan: plan.name,
           term: billingTermLabel,
           user_id: normalizedUserId,
-        });
+        }); */
         window.location.href = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`;
       },
     });
 
-    trackCustomEvent("InitiateCheckout", {
+    /* trackCustomEvent("InitiateCheckout", {
+      event_id: subscriptionId,
       price: price,
       content_name: `Checkout ${plan.name} ${billingTermLabel}`,
       checkout_region: region,
@@ -222,7 +224,7 @@ const CheckoutPage = () => {
       phone_provided: Boolean(normalizedUserId),
       langfuse_user_id: normalizedUserId,
       distinct_id: normalizedUserId
-    });
+    }); */
 
     payment.open();
   };
