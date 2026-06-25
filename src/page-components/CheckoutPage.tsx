@@ -15,19 +15,11 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   star: Star,
 };
 
-const normalizePhone = (phone: string) => phone.replace(/[^\d+]/g, "");
+const normalizePhone = (phone: string) => phone.replace(/[^\d+]/g, "").slice(0, 12);
 
 const isIndianPhoneNumber = (phone: string | null) => {
   if (!phone) return false;
-
-  const normalized = normalizePhone(phone);
-  const digitsOnly = normalized.replace(/\D/g, "");
-
-  if (normalized.startsWith("91") && digitsOnly.length === 12) return true;
-  if (digitsOnly.length === 12 && digitsOnly.startsWith("91")) return true;
-  if (digitsOnly.length === 10 && /^[6-9]/.test(digitsOnly)) return true;
-
-  return false;
+  return normalizePhone(phone).replace(/\D/g, "").startsWith("91");
 };
 
 type RazorpayOptions = {
