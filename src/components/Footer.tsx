@@ -48,7 +48,6 @@ const Footer = () => {
               <span className="font-body text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Navigate</span>
               <a href="/#how-it-works" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">How It Works</a>
               <a href="/#use-cases" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">Use Cases</a>
-              <Link href="/pricing" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
               <a href="/#founders" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">Team</a>
               <Link href="/blog" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
             </div>

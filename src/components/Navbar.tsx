@@ -11,7 +11,6 @@ import { useSourceGreeting } from "@/src/contexts/SourceGreetingContext";
 const navLinks = [
   { name: "How It Works", href: "/#how-it-works" },
   { name: "Use Cases", href: "/#use-cases" },
-  { name: "Pricing", href: "/pricing" },
   { name: "Blog", href: "/blog" },
   { name: "Team", href: "/#founders" },
 ];
