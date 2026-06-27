@@ -82,11 +82,6 @@ const getLaunchReferencePrice = (displayPrice: string) => {
 
 const checkoutFaqs = [
   {
-    question: "Only Rs 5 were deducted when I made the payment",
-    answer:
-      "As per UPI AutoPay standard procedure, Rs 5 is deducted to verify your payment method. Your chosen plan amount will be deducted automatically later at the selected billing frequency.",
-  },
-  {
     question: "How can I upgrade to Power User if I am on Premium?",
     answer:
       "You can upgrade anytime. Your old subscription will be cancelled, and any unused balance will be refunded.",
