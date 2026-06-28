@@ -128,6 +128,7 @@ const CheckoutPage = () => {
       window.alert("Payment is temporarily unavailable. Subscription API URL is missing.");
       return;
     }
+    
 
     const billingTerm = isQuarterly ? "QUARTERLY" : "MONTHLY";
     const planNameKey = plan.name.replace(/\s+/g, "_").toUpperCase();
