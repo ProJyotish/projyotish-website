@@ -140,7 +140,9 @@ export default function RootLayout({
             const urlParams = new URLSearchParams(window.location.search);
             const userId = urlParams.get("phone") ?? urlParams.get("phoneNumber") ?? urlParams.get("mobile") ?? "";
             const normalizedUserId = userId.replace(/\D/g, "");
-            window.posthog?.identify(normalizedUserId);
+            if (normalizedUserId?.trim() !== "") {
+              window.posthog?.identify(normalizedUserId);
+            }
           `}
         </Script>
 
